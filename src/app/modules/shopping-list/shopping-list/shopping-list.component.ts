@@ -12,13 +12,14 @@ export class ShoppingListComponent implements OnInit {
   itemToAdd: ShoppingListItem = new ShoppingListItem();
   listOfTotalItems: ShoppingListItem[] = [];
 
-  totalPrice: number;
+  totalPrice: number = 0;
 
   ngOnInit() {
   }
 
   addItem()
   {
+    this.totalPrice = this.totalPrice + parseInt(this.itemToAdd.price);
     this.listOfTotalItems.push(this.itemToAdd);
     this.itemToAdd = new ShoppingListItem();
   }
@@ -28,5 +29,5 @@ export class ShoppingListComponent implements OnInit {
 class ShoppingListItem
 {
   item: string;
-  price: number;
+  price: string;
 }

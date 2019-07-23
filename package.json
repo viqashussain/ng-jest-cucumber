@@ -5,9 +5,17 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
+    "test": "jest",
     "lint": "ng lint",
     "e2e": "ng e2e"
+  },
+  "jest": {
+    "preset": "jest-preset-angular",
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/**/*.ts",
+      "!<rootDir>/**/*.d.ts"
+    ]
   },
   "private": true,
   "dependencies": {
@@ -38,6 +46,7 @@
     "jasmine-spec-reporter": "~4.2.1",
     "jest": "^24.8.0",
     "jest-cucumber": "^2.0.11",
+    "jest-preset-angular": "^7.1.1",
     "karma": "~4.1.0",
     "karma-chrome-launcher": "~2.2.0",
     "karma-coverage-istanbul-reporter": "~2.0.1",

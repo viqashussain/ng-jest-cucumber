@@ -8,7 +8,7 @@ The app contains a shopping-list component where you can add items to the shoppi
 
 I have then added tests written in cucumber, and executed in jest to test this functionality:
 
-![tests](https://i.ibb.co/gtbfb1j/feature-tests.png)
+![tests](https://i.ibb.co/bsBBgyR/feature-tests.png)
 
 ## Development server
 

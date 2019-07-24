@@ -4,11 +4,11 @@ A very simple Angular 8 project to demonstrate the ability to test component log
 
 The app contains a shopping-list component where you can add items to the shopping list and the total price is then calculated. 
 
-[app](https://i.ibb.co/mXMf1b2/app.png)
+![app](https://i.ibb.co/mXMf1b2/app.png)
 
 I have then added tests written in cucumber, and executed in jest to test this functionality:
 
-[tests](https://i.ibb.co/gtbfb1j/feature-tests.png)
+![tests](https://i.ibb.co/gtbfb1j/feature-tests.png)
 
 ## Development server
 

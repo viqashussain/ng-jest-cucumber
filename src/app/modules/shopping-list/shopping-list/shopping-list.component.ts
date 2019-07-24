@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ShoppingListItem } from '../../models/shopping-list-item';
 
 @Component({
   selector: 'app-shopping-list',
@@ -19,15 +20,9 @@ export class ShoppingListComponent implements OnInit {
 
   addItem()
   {
-    this.totalPrice = this.totalPrice + parseInt(this.itemToAdd.price);
+    this.totalPrice = this.totalPrice + parseFloat(this.itemToAdd.price);
     this.listOfTotalItems.push(this.itemToAdd);
     this.itemToAdd = new ShoppingListItem();
   }
 
-}
-
-class ShoppingListItem
-{
-  item: string;
-  price: string;
 }

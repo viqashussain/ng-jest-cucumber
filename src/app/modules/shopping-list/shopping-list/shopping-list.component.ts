@@ -6,7 +6,7 @@ import { ShoppingListItem } from '../../models/shopping-list-item';
   templateUrl: './shopping-list.component.html',
   styleUrls: ['./shopping-list.component.scss']
 })
-export class ShoppingListComponent implements OnInit {
+export class ShoppingListComponent {
 
   constructor() { }
 
@@ -14,9 +14,6 @@ export class ShoppingListComponent implements OnInit {
   listOfTotalItems: ShoppingListItem[] = [];
 
   totalPrice: number = 0;
-
-  ngOnInit() {
-  }
 
   addItem()
   {
